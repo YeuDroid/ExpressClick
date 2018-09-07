@@ -5,9 +5,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ExpressClick</RootNamespace>
-    <AssemblyName>Click Canticos</AssemblyName>
+    <AssemblyName>Canticos</AssemblyName>
     <ApplicationIcon>Treetog-I-Audio-File.ico</ApplicationIcon>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -47,9 +47,16 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
     <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>ExpressClick.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
@@ -96,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dog-icon_30336.ico" />
+    <None Include="Resources\play1.png" />
     <Content Include="Treetog-I-Audio-File.ico" />
   </ItemGroup>
 </Project>

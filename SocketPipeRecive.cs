@@ -10,11 +10,11 @@ public class SocketPipeRecive
     {
     }
 
-    public SocketPipeRecive(string nameHost, string port)
-    {
-        ValueNet.nameServer = nameHost;
-        ValueNet.port = int.Parse(port);
-    }
+    //public SocketPipeRecive(string nameHost, string port)
+    //{
+    //    ValueNet.nameServer = nameHost;
+    //    ValueNet.port = int.Parse(port);
+    //}
 
     public IPAddress getIp4Adreess()
     {
